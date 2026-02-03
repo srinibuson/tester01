@@ -75,7 +75,7 @@
   <script>
     /* ---------------- DATA (replace with API) ---------------- */
     const apiResponse = Array.from({ length: 300 }, (_, i) => ({
-      RowCode: i < 90 ? "G" : "T",
+      RowCode: i < 150 ? "G" : "T",
       BinCode: `BIN-${i + 1}`,
       Status: i % 3 === 0 ? "EMPTY" : i % 3 === 1 ? "PARTIAL" : "FULL",
       CurrentQty: 10,
